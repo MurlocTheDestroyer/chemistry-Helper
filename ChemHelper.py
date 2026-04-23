@@ -25,7 +25,7 @@ class main ():
                         continue
                     else:
                         for i in PT.Chemicals:
-                            if PT.Chemicals[i]["AtomicNumber"] == chemical:
+                            if PT.Chemicals[i]["Atomic Number"] == chemical:
                                 chemical = i
                                 break
                         break
@@ -34,34 +34,35 @@ class main ():
     def chemical_Lookup():
         chemical=main.Chemical_Input_Only()
         if chemical in PT.Chemicals:
-            fieldData=input(f"\n\nWhat data do you want from the element [{chemical}]?\n 1.Symbol\n 2.Atomic Mass\n 3.Atomic Number\n Enter a number or hit the ENTER key for all fields of data:\t")
-            match fieldData:
-                case "1":
-                    return (print(f'\nThe Symbol of the element {chemical} is {PT.Chemicals[chemical]["Symbol"]}\n'))
-                case "2":
-                    return (print(f'\nThe Atomic Mass of the element {chemical} is {PT.Chemicals[chemical]["AtomicMass"]}\n'))
-                case "3":
-                    return (print(f'\nThe Atomic Number of the element {chemical} is {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
-                case "4":
-                    return (print(f'\nThe Type of the element {chemical} is {PT.Chemicals[chemical]["ElementType"]}'))
-                case _:
-                    return (print(f'\n#{PT.Chemicals[chemical]["AtomicNumber"]} | {chemical}' +
-                                  f'\n\tSymbol | {PT.Chemicals[chemical]["Symbol"]}'
-                                  f'\n\tAtomic Mass | {PT.Chemicals[chemical]["AtomicMass"]}'
-                                  f'\n\tAtomic Number | {PT.Chemicals[chemical]["AtomicNumber"]}'
-                                  f'\n\tElement Type | {PT.Chemicals[chemical]["ElementType"]}\n'))
+            print(f'\n#{PT.Chemicals[chemical]["Atomic Number"]} | {chemical}\n')
+            for prop in PT.Chemicals[chemical].keys():
+                print(f'\t{prop} | {PT.Chemicals[chemical][prop]}')
+
         else:
             return (print(f"Yikers. The chemical with the name {chemical} isnt in the file currently."))
 
     def launch_info():
-        print("List of Chemicals and current info")
-        print("___________________________________________________")
+        print("List of Chemicals and current info", end="")
+        #print("___________________________________________________")
         for i in PT.Chemicals:
+            print("\n________________________________________________________________")
+            print(f'\n#{PT.Chemicals[i]["Atomic Number"]} | {i}')
+            for prop in PT.Chemicals[i].keys():
+                match prop:
+                    case "Melting Point" | "Boiling Point":
+                        print(f'\t{prop} | {PT.Chemicals[i][prop]}',"\u00B0C")
+                    case "Density":
+                        print(f'\t{prop} | {PT.Chemicals[i][prop]}g/cm', end="\u00b3")
+                    case _:
+                        print(f'\t{prop} | {PT.Chemicals[i][prop]}')
+
+            '''
             print(f'\n#{PT.Chemicals[i]["AtomicNumber"]} | {i}' +
                   f'\n\tSymbol | {PT.Chemicals[i]["Symbol"]}'
                   f'\n\tAtomic Mass | {PT.Chemicals[i]["AtomicMass"]}'
                   f'\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}'
                   f'\n\tElement Type | {PT.Chemicals[i]["ElementType"]}\n')
+            '''
             time.sleep(0.1)
 
     def chemical_Add():
@@ -90,7 +91,7 @@ class main ():
                             else:
                                 SymbolAdd.update({PT.Chemicals[j]["Symbol"]:numberUsed})
 
-                            combinedmass+=((PT.Chemicals[j]["AtomicMass"])*numberUsed)
+                            combinedmass+=((PT.Chemicals[j]["Atomic Mass"])*numberUsed)
                             
                             if numberUsed == 1:
                                 print(f'{numberUsed} atom of {j} added to solution\n')

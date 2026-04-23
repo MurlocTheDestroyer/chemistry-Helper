@@ -2,751 +2,751 @@
 #Denisty g/cm3
 Hydrogen = {
     "Symbol":"H",
-    "AtomicMass":1.008,
-    "AtomicNumber":1,
-    "ElementType":"Reactive Nonmetal",
-    "MeltingPoint":-259.16,
-    "BoilingPoint":-252.87,
+    "Atomic Mass":1.008,
+    "Atomic Number":1,
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":-259.16,
+    "Boiling Point":-252.87,
     "Density":0.071
 
 }
 
 Helium = {
     "Symbol":"He",
-    "AtomicMass":4.0026,
-    "AtomicNumber":2,
-    "ElementType": "Noble Gas",
-    "MeltingPoint":-272.2,
-    "BoilingPoint":-268.93,
+    "Atomic Mass":4.0026,
+    "Atomic Number":2,
+    "Element Type": "Noble Gas",
+    "Melting Point":-272.2,
+    "Boiling Point":-268.93,
     "Density":0.145
 }
 Lithium = {
     "Symbol":"Li",
-    "AtomicMass":6.94,
-    "AtomicNumber":3,
-    "ElementType":"Alkali Metal",
-    "MeltingPoint": 180.54,
-    "BoilingPoint": 1342,
+    "Atomic Mass":6.94,
+    "Atomic Number":3,
+    "Element Type":"Alkali Metal",
+    "Melting Point": 180.54,
+    "Boiling Point": 1342,
     "Density":0.512
 }
 Beryllium = {
     "Symbol":"Be",
-    "AtomicMass":9.0122,
-    "AtomicNumber":4,
-    "ElementType":"Alkaline Earth Metal",
-    "MeltingPoint":1287,
-    "BoilingPoint":2469,
+    "Atomic Mass":9.0122,
+    "Atomic Number":4,
+    "Element Type":"Alkaline Earth Metal",
+    "Melting Point":1287,
+    "Boiling Point":2469,
     "Density":1.690
 }
 Boron = {
     "Symbol":"B",
-    "AtomicMass":10.81,
-    "AtomicNumber":5,
-    "ElementType":"Metalliod",
-    "MeltingPoint":2076,
-    "BoilingPoint":4000,
+    "Atomic Mass":10.81,
+    "Atomic Number":5,
+    "Element Type":"Metalliod",
+    "Melting Point":2076,
+    "Boiling Point":4000,
     "Density":2.08
 }
 Carbon = {
     "Symbol":"C",
-    "AtomicMass":12.011,
-    "AtomicNumber":6,
-    "ElementType": "Reactive Nonmetal",
-    #no Boling point found
-    "MeltingPoint": 3550,
+    "Atomic Mass":12.011,
+    "Atomic Number":6,
+    "Element Type": "Reactive Nonmetal",
+    #no Boiling point found
+    "Melting Point": 3550,
     #Density found was Diamond
     "Density": 100000000000
 }
 Nitrogen = {
     "Symbol":"N",
-    "AtomicMass":14.007,
-    "AtomicNumber":7,
-    "ElementType":"Reactive Nonmetal",
-    "MeltingPoint":-210.01,
-    "BoilingPoint":-195.79,
+    "Atomic Mass":14.007,
+    "Atomic Number":7,
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":-210.01,
+    "Boiling Point":-195.79,
     "Density":0.808
 }
 Oxygen = {
     "Symbol":"O",
-    "AtomicMass":15.999,
-    "AtomicNumber":8,
-    "ElementType":"Reactive Nonmetal",
-    "MeltingPoint":-218.79,
-    "BoilingPoint":-182.962,
+    "Atomic Mass":15.999,
+    "Atomic Number":8,
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":-218.79,
+    "Boiling Point":-182.962,
     "Density":1.141
 }
 Fluorine = {
     "Symbol":"F",
-    "AtomicMass":18.998,
-    "AtomicNumber":9,
-    "ElementType":"Reactive Nonmetal",
-    "MeltingPoint":-219.62,
-    "BoilingPoint":-188.11,
+    "Atomic Mass":18.998,
+    "Atomic Number":9,
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":-219.62,
+    "Boiling Point":-188.11,
     #no density
 }
 Neon = {
     "Symbol":"Ne",
-    "AtomicMass":20.180,
-    "AtomicNumber":10,
-    "ElementType": "Noble Gas",
-    "MeltingPoint":-248.59,
-    "BoilingPoint":-246.046,
+    "Atomic Mass":20.180,
+    "Atomic Number":10,
+    "Element Type": "Noble Gas",
+    "Melting Point":-248.59,
+    "Boiling Point":-246.046,
     #no density
 }
 Sodium = {
     "Symbol":"Na",
-    "AtomicMass":22.990,
-    "AtomicNumber":11,
-    "ElementType": "Alkali Metal",
-    "MeltingPoint":97.794,
-    "BoilingPoint":882.85,
+    "Atomic Mass":22.990,
+    "Atomic Number":11,
+    "Element Type": "Alkali Metal",
+    "Melting Point":97.794,
+    "Boiling Point":882.85,
     "Density":0.927
 }
 Magnesium = {
     "Symbol":"Mg",
-    "AtomicMass":24.305,
-    "AtomicNumber":12,
-    "ElementType":"Alkaline Earth Metal",
-    "MeltingPoint":650,
-    "BoilingPoint":1091,
+    "Atomic Mass":24.305,
+    "Atomic Number":12,
+    "Element Type":"Alkaline Earth Metal",
+    "Melting Point":650,
+    "Boiling Point":1091,
     "Density":1.584
 }
 #start stuff here https://artsexperiments.withgoogle.com/periodic-table/?exp=true&lang=en
 Aluminium = {
     "Symbol":"Al",
-    "AtomicMass":26.982,
-    "AtomicNumber":13,
-    "ElementType":None
+    "Atomic Mass":26.982,
+    "Atomic Number":13,
+    "Element Type":None
 }
 Silicon = {
     "Symbol":"Si",
-    "AtomicMass":28.085,
-    "AtomicNumber":14,
-    "ElementType":None
+    "Atomic Mass":28.085,
+    "Atomic Number":14,
+    "Element Type":None
 }
 Phosphorus = {
     "Symbol":"P",
-    "AtomicMass":30.974,
-    "AtomicNumber":15,
-    "ElementType":None
+    "Atomic Mass":30.974,
+    "Atomic Number":15,
+    "Element Type":None
 }
 Sulfur = {
     "Symbol":"S",
-    "AtomicMass":32.06,
-    "AtomicNumber":16,
-    "ElementType":None
+    "Atomic Mass":32.06,
+    "Atomic Number":16,
+    "Element Type":None
 }
 Chlorine = {
     "Symbol":"Cl",
-    "AtomicMass":35.45,
-    "AtomicNumber":17,
-    "ElementType":None
+    "Atomic Mass":35.45,
+    "Atomic Number":17,
+    "Element Type":None
 }
 Argon = {
     "Symbol":"Ar",
-    "AtomicMass":39.948,
-    "AtomicNumber":18,
-    "ElementType":None
+    "Atomic Mass":39.948,
+    "Atomic Number":18,
+    "Element Type":None
 }
 Potassium = {
     "Symbol":"K",
-    "AtomicMass":39.098,
-    "AtomicNumber":19,
-    "ElementType":None
+    "Atomic Mass":39.098,
+    "Atomic Number":19,
+    "Element Type":None
 }
 Calcium = {
     "Symbol":"Ca",
-    "AtomicMass":40.078,
-    "AtomicNumber":20,
-    "ElementType":None
+    "Atomic Mass":40.078,
+    "Atomic Number":20,
+    "Element Type":None
 }
 Scandium = {
     "Symbol":"Sc",
-    "AtomicMass":44.956,
-    "AtomicNumber":21,
-    "ElementType":None
+    "Atomic Mass":44.956,
+    "Atomic Number":21,
+    "Element Type":None
 }
 Titanium = {
     "Symbol":"Ti",
-    "AtomicMass":47.867,
-    "AtomicNumber":22,
-    "ElementType":None
+    "Atomic Mass":47.867,
+    "Atomic Number":22,
+    "Element Type":None
 }
 Vanadium = {
     "Symbol":"V",
-    "AtomicMass":50.942,
-    "AtomicNumber":23,
-    "ElementType":None
+    "Atomic Mass":50.942,
+    "Atomic Number":23,
+    "Element Type":None
 }
 Chromium = {
     "Symbol":"Cr",
-    "AtomicMass":51.996,
-    "AtomicNumber":24,
-    "ElementType":None
+    "Atomic Mass":51.996,
+    "Atomic Number":24,
+    "Element Type":None
 }
 Manganese = {
     "Symbol":"Mn",
-    "AtomicMass":54.938,
-    "AtomicNumber":25,
-    "ElementType":None
+    "Atomic Mass":54.938,
+    "Atomic Number":25,
+    "Element Type":None
 }
 Iron = {
     "Symbol":"Fe",
-    "AtomicMass":55.845,
-    "AtomicNumber":26,
-    "ElementType":None
+    "Atomic Mass":55.845,
+    "Atomic Number":26,
+    "Element Type":None
 }
 Cobalt = {
     "Symbol":"Co",
-    "AtomicMass":58.933,
-    "AtomicNumber":27,
-    "ElementType":None
+    "Atomic Mass":58.933,
+    "Atomic Number":27,
+    "Element Type":None
 }
 Nickel = {
     "Symbol":"Ni",
-    "AtomicMass":58.693,
-    "AtomicNumber":28,
-    "ElementType":None
+    "Atomic Mass":58.693,
+    "Atomic Number":28,
+    "Element Type":None
 }
 Copper = {
     "Symbol":"Cu",
-    "AtomicMass":63.546,
-    "AtomicNumber":29,
-    "ElementType":None
+    "Atomic Mass":63.546,
+    "Atomic Number":29,
+    "Element Type":None
 }
 Zinc = {
     "Symbol":"Zn",
-    "AtomicMass":65.38,
-    "AtomicNumber":30,
-    "ElementType":None
+    "Atomic Mass":65.38,
+    "Atomic Number":30,
+    "Element Type":None
 }
 Gallium = {
     "Symbol":"Ga",
-    "AtomicMass":69.723,
-    "AtomicNumber":31,
-    "ElementType":None
+    "Atomic Mass":69.723,
+    "Atomic Number":31,
+    "Element Type":None
 }
 Germanium = {
     "Symbol":"Ge",
-    "AtomicMass":72.63,
-    "AtomicNumber":32,
-    "ElementType":None
+    "Atomic Mass":72.63,
+    "Atomic Number":32,
+    "Element Type":None
 }
 Arsenic = {
     "Symbol":"As",
-    "AtomicMass":74.92,
-    "AtomicNumber":33,
-    "ElementType":None
+    "Atomic Mass":74.92,
+    "Atomic Number":33,
+    "Element Type":None
 }
 Selenium = {
     "Symbol":"Se",
-    "AtomicMass":78.96,
-    "AtomicNumber":34,
-    "ElementType":None
+    "Atomic Mass":78.96,
+    "Atomic Number":34,
+    "Element Type":None
 }
 Bromine = {
     "Symbol":"Br",
-    "AtomicMass":79.90,
-    "AtomicNumber":35,
-    "ElementType":None
+    "Atomic Mass":79.90,
+    "Atomic Number":35,
+    "Element Type":None
 }
 Krypton = {
     "Symbol":"Kr",
-    "AtomicMass":83.80,
-    "AtomicNumber":36,
-    "ElementType":None
+    "Atomic Mass":83.80,
+    "Atomic Number":36,
+    "Element Type":None
 }
 Rubidium = {
     "Symbol":"Rb",
-    "AtomicMass":85.47,
-    "AtomicNumber":37,
-    "ElementType":None
+    "Atomic Mass":85.47,
+    "Atomic Number":37,
+    "Element Type":None
 }
 Strontium = {
     "Symbol":"Sr",
-    "AtomicMass":87.62,
-    "AtomicNumber":38,
-    "ElementType":None
+    "Atomic Mass":87.62,
+    "Atomic Number":38,
+    "Element Type":None
 }
 Yttrium = {
     "Symbol":"Y",
-    "AtomicMass":88.91,
-    "AtomicNumber":39,
-    "ElementType":None
+    "Atomic Mass":88.91,
+    "Atomic Number":39,
+    "Element Type":None
 }
 Zirconium = {
     "Symbol":"Zr",
-    "AtomicMass":91.22,
-    "AtomicNumber":40,
-    "ElementType":None
+    "Atomic Mass":91.22,
+    "Atomic Number":40,
+    "Element Type":None
 }
 Niobium = {
     "Symbol":"Nb",
-    "AtomicMass":92.91,
-    "AtomicNumber":41,
-    "ElementType":None
+    "Atomic Mass":92.91,
+    "Atomic Number":41,
+    "Element Type":None
 }
 Molybdenum = {
     "Symbol":"Mo",
-    "AtomicMass":95.94,
-    "AtomicNumber":42,
-    "ElementType":None
+    "Atomic Mass":95.94,
+    "Atomic Number":42,
+    "Element Type":None
 }
 Technetium = {
     "Symbol":"Tc",
-    "AtomicMass":98.00,
-    "AtomicNumber":43,
-    "ElementType":None
+    "Atomic Mass":98.00,
+    "Atomic Number":43,
+    "Element Type":None
 }
 Ruthenium = {
     "Symbol":"Ru",
-    "AtomicMass":101.10,
-    "AtomicNumber":44,
-    "ElementType":None
+    "Atomic Mass":101.10,
+    "Atomic Number":44,
+    "Element Type":None
 }
 Rhodium = {
     "Symbol":"Rh",
-    "AtomicMass":102.90,
-    "AtomicNumber":45,
-    "ElementType":None
+    "Atomic Mass":102.90,
+    "Atomic Number":45,
+    "Element Type":None
 }
 Palladium = {
     "Symbol":"Pd",
-    "AtomicMass":106.40,
-    "AtomicNumber":46,
-    "ElementType":None
+    "Atomic Mass":106.40,
+    "Atomic Number":46,
+    "Element Type":None
 }
 Silver = {
     "Symbol":"Ag",
-    "AtomicMass":107.90,
-    "AtomicNumber":47,
-    "ElementType":None
+    "Atomic Mass":107.90,
+    "Atomic Number":47,
+    "Element Type":None
 }
 Cadmium = {
     "Symbol":"Cd",
-    "AtomicMass":112.40,
-    "AtomicNumber":48,
-    "ElementType":None
+    "Atomic Mass":112.40,
+    "Atomic Number":48,
+    "Element Type":None
 }
 Indium = {
     "Symbol":"In",
-    "AtomicMass":114.80,
-    "AtomicNumber":49,
-    "ElementType":None
+    "Atomic Mass":114.80,
+    "Atomic Number":49,
+    "Element Type":None
 }
 Tin = {
     "Symbol":"Sn",
-    "AtomicMass":118.70,
-    "AtomicNumber":50,
-    "ElementType":None
+    "Atomic Mass":118.70,
+    "Atomic Number":50,
+    "Element Type":None
 }
 Antimony = {
     "Symbol":"Sb",
-    "AtomicMass":121.8,
-    "AtomicNumber":51,
-    "ElementType":None
+    "Atomic Mass":121.8,
+    "Atomic Number":51,
+    "Element Type":None
 }
 Tellurium = {
     "Symbol":"Te",
-    "AtomicMass":127.6,
-    "AtomicNumber":52,
-    "ElementType":None
+    "Atomic Mass":127.6,
+    "Atomic Number":52,
+    "Element Type":None
 }
 Iodine = {
     "Symbol":"I",
-    "AtomicMass":126.9,
-    "AtomicNumber":53,
-    "ElementType":None
+    "Atomic Mass":126.9,
+    "Atomic Number":53,
+    "Element Type":None
 }
 Xenon = {
     "Symbol":"Xe",
-    "AtomicMass":131.3,
-    "AtomicNumber":54,
-    "ElementType":None
+    "Atomic Mass":131.3,
+    "Atomic Number":54,
+    "Element Type":None
 }
 Cesium = {
     "Symbol":"Cs",
-    "AtomicMass":132.9,
-    "AtomicNumber":55,
-    "ElementType":None
+    "Atomic Mass":132.9,
+    "Atomic Number":55,
+    "Element Type":None
 }
 Barium = {
     "Symbol":"Ba",
-    "AtomicMass":137.3,
-    "AtomicNumber":56,
-    "ElementType":None
+    "Atomic Mass":137.3,
+    "Atomic Number":56,
+    "Element Type":None
 }
 Lanthanum = {
     "Symbol":"La",
-    "AtomicMass":138.9,
-    "AtomicNumber":57,
-    "ElementType":None
+    "Atomic Mass":138.9,
+    "Atomic Number":57,
+    "Element Type":None
 }
 Cerium = {
     "Symbol":"Ce",
-    "AtomicMass":140.1,
-    "AtomicNumber":58,
-    "ElementType":None
+    "Atomic Mass":140.1,
+    "Atomic Number":58,
+    "Element Type":None
 }
 Praseodymium = {
     "Symbol":"Pr",
-    "AtomicMass":140.9,
-    "AtomicNumber":59,
-    "ElementType":None
+    "Atomic Mass":140.9,
+    "Atomic Number":59,
+    "Element Type":None
 }
 Neodymium = {
     "Symbol":"Nd",
-    "AtomicMass":144.2,
-    "AtomicNumber":60,
-    "ElementType":None
+    "Atomic Mass":144.2,
+    "Atomic Number":60,
+    "Element Type":None
 }
 Promethium = {
     "Symbol":"Pm",
-    "AtomicMass":145,
-    "AtomicNumber":61,
-    "ElementType":None
+    "Atomic Mass":145,
+    "Atomic Number":61,
+    "Element Type":None
 }
 Samarium = {
     "Symbol":"Sm",
-    "AtomicMass":150.4,
-    "AtomicNumber":62,
-    "ElementType":None
+    "Atomic Mass":150.4,
+    "Atomic Number":62,
+    "Element Type":None
 }
 Europium = {
     "Symbol":"Eu",
-    "AtomicMass":152.0,
-    "AtomicNumber":63,
-    "ElementType":None
+    "Atomic Mass":152.0,
+    "Atomic Number":63,
+    "Element Type":None
 }
 Gadolinium = {
     "Symbol":"Gd",
-    "AtomicMass":157.3,
-    "AtomicNumber":64,
-    "ElementType":None
+    "Atomic Mass":157.3,
+    "Atomic Number":64,
+    "Element Type":None
 }
 Terbium = {
     "Symbol":"Tb",
-    "AtomicMass":158.9,
-    "AtomicNumber":65,
-    "ElementType":None
+    "Atomic Mass":158.9,
+    "Atomic Number":65,
+    "Element Type":None
 }
 Dysprosium = {
     "Symbol":"Dy",
-    "AtomicMass":162.5,
-    "AtomicNumber":66,
-    "ElementType":None
+    "Atomic Mass":162.5,
+    "Atomic Number":66,
+    "Element Type":None
 }
 Holmium = {
     "Symbol":"Ho",
-    "AtomicMass":164.9,
-    "AtomicNumber":67,
-    "ElementType":None
+    "Atomic Mass":164.9,
+    "Atomic Number":67,
+    "Element Type":None
 }
 Erbium = {
     "Symbol":"Er",
-    "AtomicMass":167.3,
-    "AtomicNumber":68,
-    "ElementType":None
+    "Atomic Mass":167.3,
+    "Atomic Number":68,
+    "Element Type":None
 }
 Thulium = {
     "Symbol":"Tm",
-    "AtomicMass":168.90,
-    "AtomicNumber":69,
-    "ElementType":None
+    "Atomic Mass":168.90,
+    "Atomic Number":69,
+    "Element Type":None
 }
 Ytterbium = {
     "Symbol":"Yb",
-    "AtomicMass":173.0,
-    "AtomicNumber":70,
-    "ElementType":None
+    "Atomic Mass":173.0,
+    "Atomic Number":70,
+    "Element Type":None
 }
 Lutetium = {
     "Symbol":"Lu",
-    "AtomicMass":175.0,
-    "AtomicNumber":71,
-    "ElementType":None
+    "Atomic Mass":175.0,
+    "Atomic Number":71,
+    "Element Type":None
 }
 Hafnium = {
     "Symbol":"Hf",
-    "AtomicMass":178.5,
-    "AtomicNumber":72,
-    "ElementType":None
+    "Atomic Mass":178.5,
+    "Atomic Number":72,
+    "Element Type":None
 }
 Tantalum = {
     "Symbol":"Ta",
-    "AtomicMass":180.9,
-    "AtomicNumber":73,
-    "ElementType":None
+    "Atomic Mass":180.9,
+    "Atomic Number":73,
+    "Element Type":None
 }
 Tungsten = {
     "Symbol":"W",
-    "AtomicMass":183.8,
-    "AtomicNumber":74,
-    "ElementType":None
+    "Atomic Mass":183.8,
+    "Atomic Number":74,
+    "Element Type":None
 }
 Rhenium = {
     "Symbol":"Re",
-    "AtomicMass":186.2,
-    "AtomicNumber":75,
-    "ElementType":None
+    "Atomic Mass":186.2,
+    "Atomic Number":75,
+    "Element Type":None
 }
 Osmium = {
     "Symbol":"Os",
-    "AtomicMass":190.2,
-    "AtomicNumber":76,
-    "ElementType":None
+    "Atomic Mass":190.2,
+    "Atomic Number":76,
+    "Element Type":None
 }
 Iridium = {
     "Symbol":"Ir",
-    "AtomicMass":192.2,
-    "AtomicNumber":77,
-    "ElementType":None
+    "Atomic Mass":192.2,
+    "Atomic Number":77,
+    "Element Type":None
 }
 Platinum = {
     "Symbol":"Pt",
-    "AtomicMass":195.1,
-    "AtomicNumber":78,
-    "ElementType":None
+    "Atomic Mass":195.1,
+    "Atomic Number":78,
+    "Element Type":None
 }
 Gold = {
     "Symbol":"Au",
-    "AtomicMass":197.0,
-    "AtomicNumber":79,
-    "ElementType":None
+    "Atomic Mass":197.0,
+    "Atomic Number":79,
+    "Element Type":None
 }
 Mercury = {
     "Symbol":"Hg",
-    "AtomicMass":200.6,
-    "AtomicNumber":80,
-    "ElementType":None
+    "Atomic Mass":200.6,
+    "Atomic Number":80,
+    "Element Type":None
 }
 Thallium = {
     "Symbol":"Tl",
-    "AtomicMass":204.4,
-    "AtomicNumber":81,
-    "ElementType":None
+    "Atomic Mass":204.4,
+    "Atomic Number":81,
+    "Element Type":None
 }
 Lead = {
     "Symbol":"Pb",
-    "AtomicMass":207.2,
-    "AtomicNumber":82,
-    "ElementType":None
+    "Atomic Mass":207.2,
+    "Atomic Number":82,
+    "Element Type":None
 }
 Bismuth = {
     "Symbol":"Bi",
-    "AtomicMass":209.0,
-    "AtomicNumber":83,
-    "ElementType":None
+    "Atomic Mass":209.0,
+    "Atomic Number":83,
+    "Element Type":None
 }
 Polonium = {
     "Symbol":"Po",
-    "AtomicMass":209,
-    "AtomicNumber":84,
-    "ElementType":None
+    "Atomic Mass":209,
+    "Atomic Number":84,
+    "Element Type":None
 }
 Astatine = {
     "Symbol":"At",
-    "AtomicMass":210,
-    "AtomicNumber":85,
-    "ElementType":None
+    "Atomic Mass":210,
+    "Atomic Number":85,
+    "Element Type":None
 }
 Radon = {
     "Symbol":"Rn",
-    "AtomicMass":222,
-    "AtomicNumber":86,
-    "ElementType":None
+    "Atomic Mass":222,
+    "Atomic Number":86,
+    "Element Type":None
 }
 Francium = {
     "Symbol":"Fr",
-    "AtomicMass":223,
-    "AtomicNumber":87,
-    "ElementType":None
+    "Atomic Mass":223,
+    "Atomic Number":87,
+    "Element Type":None
 }
 Radium = {
     "Symbol":"Ra",
-    "AtomicMass":226,
-    "AtomicNumber":88,
-    "ElementType":None
+    "Atomic Mass":226,
+    "Atomic Number":88,
+    "Element Type":None
 }
 Actinium = {
     "Symbol":"Ac",
-    "AtomicMass":227,
-    "AtomicNumber":89,
-    "ElementType":None
+    "Atomic Mass":227,
+    "Atomic Number":89,
+    "Element Type":None
 }
 Thorium = {
     "Symbol":"Th",
-    "AtomicMass":232.0,
-    "AtomicNumber":90,
-    "ElementType":None
+    "Atomic Mass":232.0,
+    "Atomic Number":90,
+    "Element Type":None
 }
 Protactinium = {
     "Symbol":"Pa",
-    "AtomicMass":231.0,
-    "AtomicNumber":91,
-    "ElementType":None
+    "Atomic Mass":231.0,
+    "Atomic Number":91,
+    "Element Type":None
 }
 Uranium = {
     "Symbol":"U",
-    "AtomicMass":238.0,
-    "AtomicNumber":92,
-    "ElementType":None
+    "Atomic Mass":238.0,
+    "Atomic Number":92,
+    "Element Type":None
 }
 Neptunium = {
     "Symbol":"Np",
-    "AtomicMass":237,
-    "AtomicNumber":93,
-    "ElementType":None
+    "Atomic Mass":237,
+    "Atomic Number":93,
+    "Element Type":None
 }
 Plutonium = {
     "Symbol":"Pu",
-    "AtomicMass":244,
-    "AtomicNumber":94,
-    "ElementType":None
+    "Atomic Mass":244,
+    "Atomic Number":94,
+    "Element Type":None
 }
 Americium = {
     "Symbol":"Am",
-    "AtomicMass":243,
-    "AtomicNumber":95,
-    "ElementType":None
+    "Atomic Mass":243,
+    "Atomic Number":95,
+    "Element Type":None
 }
 Curium = {
     "Symbol":"Cm",
-    "AtomicMass":247,
-    "AtomicNumber":96,
-    "ElementType":None
+    "Atomic Mass":247,
+    "Atomic Number":96,
+    "Element Type":None
 }
 Berkelium = {
     "Symbol":"Bk",
-    "AtomicMass":247,
-    "AtomicNumber":97,
-    "ElementType":None
+    "Atomic Mass":247,
+    "Atomic Number":97,
+    "Element Type":None
 }
 Californium = {
     "Symbol":"Cf",
-    "AtomicMass":251,
-    "AtomicNumber":98,
-    "ElementType":None
+    "Atomic Mass":251,
+    "Atomic Number":98,
+    "Element Type":None
 }
 Einsteinium = {
     "Symbol":"Es",
-    "AtomicMass":252,
-    "AtomicNumber":99,
-    "ElementType":None
+    "Atomic Mass":252,
+    "Atomic Number":99,
+    "Element Type":None
 }
 Fermium = {
     "Symbol":"Fm",
-    "AtomicMass":257,
-    "AtomicNumber":100,
-    "ElementType":None
+    "Atomic Mass":257,
+    "Atomic Number":100,
+    "Element Type":None
 }
 Mendelevium = {
     "Symbol":"Md",
-    "AtomicMass":258,
-    "AtomicNumber":101,
-    "ElementType":None
+    "Atomic Mass":258,
+    "Atomic Number":101,
+    "Element Type":None
 }
 Nobelium = {
     "Symbol":"No",
-    "AtomicMass":259,
-    "AtomicNumber":102,
-    "ElementType":None
+    "Atomic Mass":259,
+    "Atomic Number":102,
+    "Element Type":None
 }
 Lawrencium = {
     "Symbol":"Lr",
-    "AtomicMass":262,
-    "AtomicNumber":103,
-    "ElementType":None
+    "Atomic Mass":262,
+    "Atomic Number":103,
+    "Element Type":None
 }
 Rutherfordium = {
     "Symbol":"Rf",
-    "AtomicMass":261,
-    "AtomicNumber":104,
-    "ElementType":None
+    "Atomic Mass":261,
+    "Atomic Number":104,
+    "Element Type":None
 }
 Dubnium = {
     "Symbol":"Db",
-    "AtomicMass":262,
-    "AtomicNumber":105,
-    "ElementType":None
+    "Atomic Mass":262,
+    "Atomic Number":105,
+    "Element Type":None
 }
 Seaborgium = {
     "Symbol":"Sg",
-    "AtomicMass":266,
-    "AtomicNumber":106,
-    "ElementType":None
+    "Atomic Mass":266,
+    "Atomic Number":106,
+    "Element Type":None
 }
 Bohrium = {
     "Symbol":"Bh",
-    "AtomicMass":264,
-    "AtomicNumber":107,
-    "ElementType":None
+    "Atomic Mass":264,
+    "Atomic Number":107,
+    "Element Type":None
 }
 Hassium = {
     "Symbol":"Hs",
-    "AtomicMass":277,
-    "AtomicNumber":108,
-    "ElementType":None
+    "Atomic Mass":277,
+    "Atomic Number":108,
+    "Element Type":None
 }
 Meitnerium = {
     "Symbol":"Mt",
-    "AtomicMass":268,
-    "AtomicNumber":109,
-    "ElementType":None
+    "Atomic Mass":268,
+    "Atomic Number":109,
+    "Element Type":None
 }
 Darmstadtium = {
     "Symbol":"Ds",
-    "AtomicMass":271,
-    "AtomicNumber":110,
-    "ElementType":None
+    "Atomic Mass":271,
+    "Atomic Number":110,
+    "Element Type":None
 }
 Roentgenium = {
     "Symbol":"Rg",
-    "AtomicMass":272,
-    "AtomicNumber":111,
-    "ElementType":None
+    "Atomic Mass":272,
+    "Atomic Number":111,
+    "Element Type":None
 }
 Copernicium = {
     "Symbol":"Cn",
-    "AtomicMass":285,
-    "AtomicNumber":112,
-    "ElementType":None
+    "Atomic Mass":285,
+    "Atomic Number":112,
+    "Element Type":None
 }
 Nihonium = {
     "Symbol":"Nh",
-    "AtomicMass":286,
-    "AtomicNumber":113,
-    "ElementType":None
+    "Atomic Mass":286,
+    "Atomic Number":113,
+    "Element Type":None
 }
 Flerovium = {
     "Symbol":"Fl",
-    "AtomicMass":289,
-    "AtomicNumber":114,
-    "ElementType":None
+    "Atomic Mass":289,
+    "Atomic Number":114,
+    "Element Type":None
 }
 Moscovium = {
     "Symbol":"Mc",
-    "AtomicMass":290,
-    "AtomicNumber":115,
-    "ElementType":None
+    "Atomic Mass":290,
+    "Atomic Number":115,
+    "Element Type":None
 }
 Livermorium = {
     "Symbol":"Lv",
-    "AtomicMass":293,
-    "AtomicNumber":116,
-    "ElementType":None
+    "Atomic Mass":293,
+    "Atomic Number":116,
+    "Element Type":None
 }
 Tennessine = {
     "Symbol":"Ts",
-    "AtomicMass":294,
-    "AtomicNumber":117,
-    "ElementType":None
+    "Atomic Mass":294,
+    "Atomic Number":117,
+    "Element Type":None
 }
 Oganesson = {
     "Symbol":"Og",
-    "AtomicMass":294,
-    "AtomicNumber":118,
-    "ElementType":None
+    "Atomic Mass":294,
+    "Atomic Number":118,
+    "Element Type":None
 }
 
 Chemicals={
