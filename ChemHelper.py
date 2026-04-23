@@ -23,10 +23,12 @@ class main ():
                     if chemical <=0:
                         print("Please enter only positive integers and please try again.")
                         continue
-                    for i in PT.Chemicals:
-                        if PT.Chemicals[i]["AtomicNumber"] == chemical:
-                            chemical = i
-                            break
+                    else:
+                        for i in PT.Chemicals:
+                            if PT.Chemicals[i]["AtomicNumber"] == chemical:
+                                chemical = i
+                                break
+                        break
         return(chemical)
         
     def chemical_Lookup():
