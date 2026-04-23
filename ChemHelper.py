@@ -17,6 +17,7 @@ class main ():
                         if PT.Chemicals[i]["Symbol"] == chemical:
                             chemical = i
                             break
+                    break
             finally:
                 if type(chemical) == int:
                     if chemical <=0:
@@ -26,7 +27,7 @@ class main ():
                         if PT.Chemicals[i]["AtomicNumber"] == chemical:
                             chemical = i
                             break
-            return(chemical)
+        return(chemical)
         
     def chemical_Lookup():
         chemical=main.Chemical_Input_Only()
