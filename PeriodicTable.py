@@ -1,76 +1,117 @@
+#Melting point and Boiling point temps or in C or Celcius. Should be displayed as 50C
+#Denisty g/cm3
 Hydrogen = {
     "Symbol":"H",
     "AtomicMass":1.008,
     "AtomicNumber":1,
-    "ElementType":None
+    "ElementType":"Reactive Nonmetal",
+    "MeltingPoint":-259.16,
+    "BoilingPoint":-252.87,
+    "Density":0.071
+
 }
 
 Helium = {
     "Symbol":"He",
     "AtomicMass":4.0026,
     "AtomicNumber":2,
-    "ElementType":None
+    "ElementType": "Noble Gas",
+    "MeltingPoint":-272.2,
+    "BoilingPoint":-268.93,
+    "Density":0.145
 }
 Lithium = {
     "Symbol":"Li",
     "AtomicMass":6.94,
     "AtomicNumber":3,
-    "ElementType":None
+    "ElementType":"Alkali Metal",
+    "MeltingPoint": 180.54,
+    "BoilingPoint": 1342,
+    "Density":0.512
 }
 Beryllium = {
     "Symbol":"Be",
     "AtomicMass":9.0122,
     "AtomicNumber":4,
-    "ElementType":None
+    "ElementType":"Alkaline Earth Metal",
+    "MeltingPoint":1287,
+    "BoilingPoint":2469,
+    "Density":1.690
 }
 Boron = {
     "Symbol":"B",
     "AtomicMass":10.81,
     "AtomicNumber":5,
-    "ElementType":None
+    "ElementType":"Metalliod",
+    "MeltingPoint":2076,
+    "BoilingPoint":4000,
+    "Density":2.08
 }
 Carbon = {
     "Symbol":"C",
     "AtomicMass":12.011,
     "AtomicNumber":6,
-    "ElementType":None
+    "ElementType": "Reactive Nonmetal",
+    #no Boling point found
+    "MeltingPoint": 3550,
+    #Density found was Diamond
+    "Density": 100000000000
 }
 Nitrogen = {
     "Symbol":"N",
     "AtomicMass":14.007,
     "AtomicNumber":7,
-    "ElementType":None
+    "ElementType":"Reactive Nonmetal",
+    "MeltingPoint":-210.01,
+    "BoilingPoint":-195.79,
+    "Density":0.808
 }
 Oxygen = {
     "Symbol":"O",
     "AtomicMass":15.999,
     "AtomicNumber":8,
-    "ElementType":None
+    "ElementType":"Reactive Nonmetal",
+    "MeltingPoint":-218.79,
+    "BoilingPoint":-182.962,
+    "Density":1.141
 }
 Fluorine = {
     "Symbol":"F",
     "AtomicMass":18.998,
     "AtomicNumber":9,
-    "ElementType":None
+    "ElementType":"Reactive Nonmetal",
+    "MeltingPoint":-219.62,
+    "BoilingPoint":-188.11,
+    #no density
 }
 Neon = {
     "Symbol":"Ne",
     "AtomicMass":20.180,
     "AtomicNumber":10,
-    "ElementType":None
+    "ElementType": "Noble Gas",
+    "MeltingPoint":-248.59,
+    "BoilingPoint":-246.046,
+    #no density
 }
 Sodium = {
     "Symbol":"Na",
     "AtomicMass":22.990,
     "AtomicNumber":11,
-    "ElementType":None
+    "ElementType": "Alkali Metal",
+    "MeltingPoint":97.794,
+    "BoilingPoint":882.85,
+    "Density":0.927
 }
 Magnesium = {
     "Symbol":"Mg",
     "AtomicMass":24.305,
     "AtomicNumber":12,
-    "ElementType":None
+    "ElementType":"Alkaline Earth Metal",
+    "MeltingPoint":650,
+    "BoilingPoint":1091,
+    "Density":1.584
 }
+#start stuff here https://artsexperiments.withgoogle.com/periodic-table/?exp=true&lang=en
 Aluminium = {
     "Symbol":"Al",
     "AtomicMass":26.982,
