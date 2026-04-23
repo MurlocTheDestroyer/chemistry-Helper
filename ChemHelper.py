@@ -33,6 +33,7 @@ class main ():
     def chemical_Add():
         # desired outcome if elements are put in {combined symbols} and {combined mass} EX: hydrogen hydrogen == H2, 2.016g
         SymbolAdd={}
+        finalSymbolAdd=""
         combinedmass=0
         i=1
         while True:
@@ -46,21 +47,23 @@ class main ():
                     for j in PT.Chemicals:
                         if j==chemical:
                             if PT.Chemicals[j]["Symbol"] in SymbolAdd:
-                                SymbolAdd.update({(PT.Chemicals[j]["Symbol"]):(SymbolAdd.get[PT.Chemicals[j]["Symbol"]] + numberUsed)})
+                                SymbolAdd.update({(PT.Chemicals[j]["Symbol"]):(SymbolAdd.get(PT.Chemicals[j]["Symbol"]) + numberUsed)})
                             else:
                                 SymbolAdd.update({PT.Chemicals[j]["Symbol"]:numberUsed})
 
                             combinedmass+=((PT.Chemicals[j]["AtomicMass"])*numberUsed)
                             
                             if numberUsed == 1:
-                                print(f'{numberUsed} atom of {j} added to solution')
+                                print(f'{numberUsed} atom of {j} added to solution\n')
                             else:
-                                print(f'{numberUsed} atoms of {j} added to solution')
+                                print(f'{numberUsed} atoms of {j} added to solution\n')
                             
                     i+=1
                 else:
-                    print(f"Yikers. The chemical with the name {chemical} isnt in the file currently. Please try again.")
-        return (print(f"This is the dictionary :{SymbolAdd}"), print(f"This is the combined mass for dictionary :{combinedmass}g"))
+                    print(f"Yikers. The chemical with the name {chemical} isnt in the file currently. Please try again.\n")
+        for k in SymbolAdd:
+            finalSymbolAdd+=f"{k}{SymbolAdd[k]}"
+        return (print(f"This is the dictionary :{finalSymbolAdd}"), print(f"This is the combined mass for dictionary :{combinedmass}g"))
     
     def bootup():
         choice=input("What Command?\t Current commands (launch_info),(chemical_Lookup),(chemical_Add)\n")
