@@ -5,19 +5,37 @@ class main ():
         pass
 
     def chemical_Lookup():
-        chemical=input("What chemical would you like?:\t").capitalize()
+        #inputtype=input("would you like to input element by their (Atomic Number, Name, or Symbol?\n1: Atomic Number\n2: Name\n3: Symbol\n Your Choice: ")
+        chemical=input("Please input element by The elements (Atomic Number, Name, or Symbol):\t")
+        try:
+            chemical=int(chemical)
+            print("Number worked")
+        except ValueError:
+            chemical=chemical.capitalize()
+            if len(chemical)<5:
+                for i in PT.Chemicals:
+                    if PT.Chemicals[i]["Symbol"] == chemical:
+                        chemical = i
+            else:
+                print("No conversion needed")
+        finally:
+            if type(chemical) == int:
+                for i in PT.Chemicals:
+                    if PT.Chemicals[i]["AtomicNumber"] == chemical:
+                        chemical = i
+        print("what happens here?")
         if chemical in PT.Chemicals:
-            fieldData=input(f"What data do you want from the chemical [{chemical}]?\n 1.Symbol\n 2.Atomic Mass\n 3.Atomic Number\n Enter a number or hit the ENTER key for all fields of data:\t")
-            for i in PT.Chemicals:
-                match fieldData:
-                    case "1" if chemical == i:
-                        return (print(f'\nThe Symbol of the chemical {i} is {PT.Chemicals[i]["Symbol"]}\n'))
-                    case "2" if chemical == i:
-                        return (print(f'\nThe Atomic Mass of the chemical {i} is {PT.Chemicals[i]["AtomicMass"]}\n'))
-                    case "3" if chemical == i:
-                        return (print(f'\nThe Atomic Number of the chemical {i} is {PT.Chemicals[i]["AtomicNumber"]}\n'))
-                    case _ if chemical == i:
-                        return (print(f'#{PT.Chemicals[i]["AtomicNumber"]} | {i}\n\tSymbol | {PT.Chemicals[i]["Symbol"]}\n\tAtomic Mass | {PT.Chemicals[i]["AtomicMass"]}\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}\n'))
+            fieldData=input(f"What data do you want from the element [{chemical}]?\n 1.Symbol\n 2.Atomic Mass\n 3.Atomic Number\n Enter a number or hit the ENTER key for all fields of data:\t")
+            #for d in PT.Chemicals:
+            match fieldData:
+                case "1": #if chemical == i:
+                    return (print(f'\nThe Symbol of the chemical {chemical} is {PT.Chemicals[chemical]["Symbol"]}\n'))
+                case "2": #if chemical == i:
+                    return (print(f'\nThe Atomic Mass of the chemical {chemical} is {PT.Chemicals[chemical]["AtomicMass"]}\n'))
+                case "3": #if chemical == i:
+                    return (print(f'\nThe Atomic Number of the chemical {chemical} is {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
+                case _: #if chemical == i:
+                    return (print(f'#{PT.Chemicals[chemical]["AtomicNumber"]} | {chemical}\n\tSymbol | {PT.Chemicals[chemical]["Symbol"]}\n\tAtomic Mass | {PT.Chemicals[chemical]["AtomicMass"]}\n\tAtomic Number | {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
                 #used for testing purposes dont include in stuff
                 #print("Incorrect Chemical match")
         else:
@@ -86,4 +104,4 @@ class main ():
                 print(f" ({choice}) COMMAND NOT FOUND. Please try again")
                 main.bootup()
 
-main.chemical_Add()
+main.chemical_Lookup()
