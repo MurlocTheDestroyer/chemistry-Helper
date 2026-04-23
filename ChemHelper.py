@@ -4,40 +4,46 @@ class main ():
     def __init__(self) -> None:
         pass
 
+    def Chemical_Input_Only():
+        chemical = None
+        while True:
+            chemical=input("\nPlease input element by the element (Atomic Number, Name, or Symbol):\t")
+            try:
+                chemical=int(chemical)
+            except ValueError:
+                chemical=chemical.capitalize()
+                if len(chemical)<=2:
+                    for i in PT.Chemicals:
+                        if PT.Chemicals[i]["Symbol"] == chemical:
+                            chemical = i
+                            break
+            finally:
+                if type(chemical) == int:
+                    if chemical <=0:
+                        print("Please enter only positive integers and please try again.")
+                        continue
+                    for i in PT.Chemicals:
+                        if PT.Chemicals[i]["AtomicNumber"] == chemical:
+                            chemical = i
+                            break
+            return(chemical)
+        
     def chemical_Lookup():
-        #inputtype=input("would you like to input element by their (Atomic Number, Name, or Symbol?\n1: Atomic Number\n2: Name\n3: Symbol\n Your Choice: ")
-        chemical=input("Please input element by The elements (Atomic Number, Name, or Symbol):\t")
-        try:
-            chemical=int(chemical)
-            print("Number worked")
-        except ValueError:
-            chemical=chemical.capitalize()
-            if len(chemical)<5:
-                for i in PT.Chemicals:
-                    if PT.Chemicals[i]["Symbol"] == chemical:
-                        chemical = i
-            else:
-                print("No conversion needed")
-        finally:
-            if type(chemical) == int:
-                for i in PT.Chemicals:
-                    if PT.Chemicals[i]["AtomicNumber"] == chemical:
-                        chemical = i
-        print("what happens here?")
+        chemical=main.Chemical_Input_Only()
         if chemical in PT.Chemicals:
-            fieldData=input(f"What data do you want from the element [{chemical}]?\n 1.Symbol\n 2.Atomic Mass\n 3.Atomic Number\n Enter a number or hit the ENTER key for all fields of data:\t")
-            #for d in PT.Chemicals:
+            fieldData=input(f"\n\nWhat data do you want from the element [{chemical}]?\n 1.Symbol\n 2.Atomic Mass\n 3.Atomic Number\n Enter a number or hit the ENTER key for all fields of data:\t")
             match fieldData:
-                case "1": #if chemical == i:
+                case "1":
                     return (print(f'\nThe Symbol of the chemical {chemical} is {PT.Chemicals[chemical]["Symbol"]}\n'))
-                case "2": #if chemical == i:
+                case "2":
                     return (print(f'\nThe Atomic Mass of the chemical {chemical} is {PT.Chemicals[chemical]["AtomicMass"]}\n'))
-                case "3": #if chemical == i:
+                case "3":
                     return (print(f'\nThe Atomic Number of the chemical {chemical} is {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
-                case _: #if chemical == i:
-                    return (print(f'#{PT.Chemicals[chemical]["AtomicNumber"]} | {chemical}\n\tSymbol | {PT.Chemicals[chemical]["Symbol"]}\n\tAtomic Mass | {PT.Chemicals[chemical]["AtomicMass"]}\n\tAtomic Number | {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
-                #used for testing purposes dont include in stuff
-                #print("Incorrect Chemical match")
+                case _:
+                    return (print(f'\n#{PT.Chemicals[chemical]["AtomicNumber"]} | {chemical}' +
+                                  f'\n\tSymbol | {PT.Chemicals[chemical]["Symbol"]}'
+                                  f'\n\tAtomic Mass | {PT.Chemicals[chemical]["AtomicMass"]}'
+                                  f'\n\tAtomic Number | {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
         else:
             return (print(f"Yikers. The chemical with the name {chemical} isnt in the file currently."))
 
@@ -45,7 +51,10 @@ class main ():
         print("List of Chemicals and current info")
         print("___________________________________________________")
         for i in PT.Chemicals:
-            print(f' #{PT.Chemicals[i]["AtomicNumber"]} | {i}\n\tSymbol | {PT.Chemicals[i]["Symbol"]}\n\tAtomic Mass | {PT.Chemicals[i]["AtomicMass"]}\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}\n')
+            print(f'\n#{PT.Chemicals[i]["AtomicNumber"]} | {i}' +
+                  f'\n\tSymbol | {PT.Chemicals[i]["Symbol"]}'
+                  f'\n\tAtomic Mass | {PT.Chemicals[i]["AtomicMass"]}'
+                  f'\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}\n')
             time.sleep(0.1)
 
     def chemical_Add():
@@ -55,13 +64,18 @@ class main ():
         combinedmass=0
         i=1
         while True:
-            chemical=input(f"Please input name of chemical to add\nChemical #{i}:")
-            chemical=chemical.capitalize()
+            chemical = main.Chemical_Input_Only()
             if chemical == "Quit" or chemical == "Stop":
                 break
             else:
                 if chemical in PT.Chemicals:
-                    numberUsed=int(input(f"Please input how many atoms of {chemical} are in the solution: "))
+                    numberUsed=input(f"Please input how many atoms of {chemical} are in the solution: ")
+                    while type(numberUsed)!=int:
+                        try:
+                            numberUsed=int(numberUsed)
+                        except ValueError:
+                            numberUsed=input(f"Please input a integer of how many atoms of {chemical} are in the solution: ")
+
                     for j in PT.Chemicals:
                         if j==chemical:
                             if PT.Chemicals[j]["Symbol"] in SymbolAdd:
@@ -103,5 +117,17 @@ class main ():
             case _:
                 print(f" ({choice}) COMMAND NOT FOUND. Please try again")
                 main.bootup()
-
-main.chemical_Lookup()
+        main.Replay()
+    def Replay():
+        Stopper=input("Press any key to continue: ")
+        decision= input("Would you like to use another tool? Y/N: ")
+        match decision:
+            case "Y" | "y":
+                main.bootup()
+            case "N" | "n":
+                print("OK. GOODBYE")
+            case _:
+                print("\n\nPlease make a choice of 'Y' or 'N' ")
+                main.Replay()
+            
+main.bootup()
