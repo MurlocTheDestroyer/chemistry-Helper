@@ -37,16 +37,19 @@ class main ():
             fieldData=input(f"\n\nWhat data do you want from the element [{chemical}]?\n 1.Symbol\n 2.Atomic Mass\n 3.Atomic Number\n Enter a number or hit the ENTER key for all fields of data:\t")
             match fieldData:
                 case "1":
-                    return (print(f'\nThe Symbol of the chemical {chemical} is {PT.Chemicals[chemical]["Symbol"]}\n'))
+                    return (print(f'\nThe Symbol of the element {chemical} is {PT.Chemicals[chemical]["Symbol"]}\n'))
                 case "2":
-                    return (print(f'\nThe Atomic Mass of the chemical {chemical} is {PT.Chemicals[chemical]["AtomicMass"]}\n'))
+                    return (print(f'\nThe Atomic Mass of the element {chemical} is {PT.Chemicals[chemical]["AtomicMass"]}\n'))
                 case "3":
-                    return (print(f'\nThe Atomic Number of the chemical {chemical} is {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
+                    return (print(f'\nThe Atomic Number of the element {chemical} is {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
+                case "4":
+                    return (print(f'\nThe Type of the element {chemical} is {PT.Chemicals[chemical]["ElementType"]}'))
                 case _:
                     return (print(f'\n#{PT.Chemicals[chemical]["AtomicNumber"]} | {chemical}' +
                                   f'\n\tSymbol | {PT.Chemicals[chemical]["Symbol"]}'
                                   f'\n\tAtomic Mass | {PT.Chemicals[chemical]["AtomicMass"]}'
-                                  f'\n\tAtomic Number | {PT.Chemicals[chemical]["AtomicNumber"]}\n'))
+                                  f'\n\tAtomic Number | {PT.Chemicals[chemical]["AtomicNumber"]}'
+                                  f'\n\tElement Type | {PT.Chemicals[chemical]["ElementType"]}\n'))
         else:
             return (print(f"Yikers. The chemical with the name {chemical} isnt in the file currently."))
 
@@ -57,7 +60,8 @@ class main ():
             print(f'\n#{PT.Chemicals[i]["AtomicNumber"]} | {i}' +
                   f'\n\tSymbol | {PT.Chemicals[i]["Symbol"]}'
                   f'\n\tAtomic Mass | {PT.Chemicals[i]["AtomicMass"]}'
-                  f'\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}\n')
+                  f'\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}'
+                  f'\n\tElement Type | {PT.Chemicals[i]["ElementType"]}\n')
             time.sleep(0.1)
 
     def chemical_Add():
@@ -121,6 +125,7 @@ class main ():
                 print(f" ({choice}) COMMAND NOT FOUND. Please try again")
                 main.bootup()
         main.Replay()
+
     def Replay():
         Stopper=input("Press any key to continue: ")
         decision= input("Would you like to use another tool? Y/N: ")
