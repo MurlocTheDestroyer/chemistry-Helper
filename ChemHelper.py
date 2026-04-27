@@ -32,14 +32,55 @@ class main ():
         return(chemical)
         
     def chemical_Lookup():
-        chemical=main.Chemical_Input_Only()
-        if chemical in PT.Chemicals:
-            print(f'\n#{PT.Chemicals[chemical]["Atomic Number"]} | {chemical}\n')
-            for prop in PT.Chemicals[chemical].keys():
-                print(f'\t{prop} | {PT.Chemicals[chemical][prop]}')
+        #determine if user looking for a group search or a single element.
+        LookingFor= input("Are looking for what elements are in a group or just wanting info on a single element? TYPE group or single: ")
+        LookingFor=LookingFor.lower()
+        match LookingFor:
+            case "group":
+                #ListOfE is the List of all of the elements that fall under that Element Type
+                ListOfE=[]
+                print("To help with spelling errors please input a number for the selection\n1. Alkali Metal\n2. Alkaline Earth Metal\n3. Transition Metal\n4. Post-transition Metal\n5. Metalloid\n6. Reactive Nonmetal\n7. Noble Gas\n8. Lanthanide\n9. Actinide\n10. Unknown Chemical Properties")
+                Group=int(input("What group would you like?: "))
+                match Group:
+                    case 1:
+                        Group= "Alkali Metal"
+                    case 2:
+                        Group= "Alkaline Earth Metal"
+                    case 3:
+                        Group= "Transition Metal"
+                    case 4:
+                        Group= "Post-transition Metal"
+                    case 5:
+                        Group= "Metalloid"
+                    case 6:
+                        Group= "Reactive Nonmetal"
+                    case 7:
+                        Group= "Noble Gas"
+                    case 8:
+                        Group= "Lanthanide"
+                    case 9:
+                        Group= "Actinide"
+                    case 10:
+                        Group= "Unknown Chemical Properties"
+                    case _:
+                        print("Error please enter a number")               
+                for Chem in PT.Chemicals.keys():
+                    for prop in PT.Chemicals[Chem].keys():
+                        if prop == "Element Type":
+                            if (PT.Chemicals[Chem][prop]) == Group:
+                                #Somewhere here doesnt output correctly? should be [Chemical1, Chemical2] instead its ['Chemical1', 'Chemical2']
+                                ListOfE.append(Chem)
+                #Could also be the case here? should be [Chemical1, Chemical2] instead its ['Chemical1', 'Chemical2']
+                return(print(f"This is the elements in the {Group} group.\n{ListOfE}"))
+            case _:
+                chemical=main.Chemical_Input_Only()
+                if chemical in PT.Chemicals:
+                    print(f'\n#{PT.Chemicals[chemical]["Atomic Number"]} | {chemical}\n')
+                    for prop in PT.Chemicals[chemical].keys():
+                        print(f'\t{prop} | {PT.Chemicals[chemical][prop]}')
 
-        else:
-            return (print(f"Yikers. The chemical with the name {chemical} isnt in the file currently."))
+                else:
+                    return (print(f"Yikers. The chemical with the name {chemical} isnt in the file currently."))
 
     def launch_info():
         print("List of Chemicals and current info", end="")
@@ -55,14 +96,6 @@ class main ():
                         print(f'\t{prop} | {PT.Chemicals[i][prop]}g/cm', end="\u00b3")
                     case _:
                         print(f'\t{prop} | {PT.Chemicals[i][prop]}')
-
-            '''
-            print(f'\n#{PT.Chemicals[i]["AtomicNumber"]} | {i}' +
-                  f'\n\tSymbol | {PT.Chemicals[i]["Symbol"]}'
-                  f'\n\tAtomic Mass | {PT.Chemicals[i]["AtomicMass"]}'
-                  f'\n\tAtomic Number | {PT.Chemicals[i]["AtomicNumber"]}'
-                  f'\n\tElement Type | {PT.Chemicals[i]["ElementType"]}\n')
-            '''
             time.sleep(0.1)
 
     def chemical_Add():
@@ -139,4 +172,4 @@ class main ():
                 print("\n\nPlease make a choice of 'Y' or 'N' ")
                 main.Replay()
             
-main.bootup()
+main.chemical_Lookup()
