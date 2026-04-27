@@ -198,259 +198,284 @@ Scandium = {
     #liquid at melting point used for Density
     "Density":2.80
 }
-#Continue here below using https://artsexperiments.withgoogle.com/periodic-table/?exp=true&lang=en
 Titanium = {
     "Symbol":"Ti",
     "Atomic Mass":47.867,
     "Atomic Number":22,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1668,
+    "Boiling Point":3286.85,
+    #liquid at melting point used for Density
+    "Density":4.11
 }
 Vanadium = {
     "Symbol":"V",
     "Atomic Mass":50.942,
     "Atomic Number":23,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1910,
+    "Boiling Point":3407,
+    #liquid at melting point used for Density
+    "Density":5.5
 }
 Chromium = {
     "Symbol":"Cr",
     "Atomic Mass":51.996,
     "Atomic Number":24,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1907,
+    "Boiling Point":2671.85,
+    #liquid at melting point used for Density
+    "Density":6.3
 }
 Manganese = {
     "Symbol":"Mn",
     "Atomic Mass":54.938,
     "Atomic Number":25,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1246,
+    "Boiling Point":2061,
+    #liquid at melting point used for Density
+    "Density":5.95
 }
 Iron = {
     "Symbol":"Fe",
     "Atomic Mass":55.845,
     "Atomic Number":26,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1538,
+    "Boiling Point":2862,
+    #liquid at melting point used for Density
+    "Density":6.98
 }
 Cobalt = {
     "Symbol":"Co",
     "Atomic Mass":58.933,
     "Atomic Number":27,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1495,
+    "Boiling Point":2869.85,
+    #liquid at melting point used for Density
+    "Density":8.86
 }
 Nickel = {
     "Symbol":"Ni",
     "Atomic Mass":58.693,
     "Atomic Number":28,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1455,
+    "Boiling Point":2730,
+    #liquid at melting point used for Density
+    "Density":7.81
 }
 Copper = {
     "Symbol":"Cu",
     "Atomic Mass":63.546,
     "Atomic Number":29,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1084.62,
+    "Boiling Point":2562,
+    #liquid at melting point used for Density
+    "Density":8.02
 }
 Zinc = {
     "Symbol":"Zn",
     "Atomic Mass":65.38,
     "Atomic Number":30,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":419.53,
+    "Boiling Point":907,
+    #liquid at melting point used for Density
+    "Density":6.57
 }
 Gallium = {
     "Symbol":"Ga",
     "Atomic Mass":69.723,
     "Atomic Number":31,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "POSTAMET",
+    "Melting Point":29.7646,
+    "Boiling Point":2400,
+    #liquid at melting point used for Density
+    "Density":6.095
 }
 Germanium = {
     "Symbol":"Ge",
     "Atomic Mass":72.63,
     "Atomic Number":32,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Metalloid",
+    "Melting Point":938.25,
+    "Boiling Point":2833,
+    #liquid at melting point used for Density
+    "Density":5.60
 }
 Arsenic = {
     "Symbol":"As",
     "Atomic Mass":74.92,
     "Atomic Number":33,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Metalloid",
+    "Melting Point":816.85,
+    "Boiling Point":613,
+    #liquid at melting point used for Density
+    "Density":5.22
 }
 Selenium = {
     "Symbol":"Se",
     "Atomic Mass":78.96,
     "Atomic Number":34,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Reactive Nonmetal",
+    "Melting Point":220.85,
+    "Boiling Point":684.85,
+    #liquid at melting point used for Density
+    "Density":3.99
 }
 Bromine = {
     "Symbol":"Br",
     "Atomic Mass":79.90,
     "Atomic Number":35,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Reactive Nonmetal",
+    "Melting Point":-7.2,
+    "Boiling Point":58.8
+    #No Density found
 }
 Krypton = {
     "Symbol":"Kr",
     "Atomic Mass":83.80,
     "Atomic Number":36,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Noble Gas",
+    "Melting Point":-157.36,
+    "Boiling Point":-153.415
+    #No Density found
 }
 Rubidium = {
     "Symbol":"Rb",
     "Atomic Mass":85.47,
     "Atomic Number":37,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Alkali Metal",
+    "Melting Point":39.48,
+    "Boiling Point":688,
+    #liquid at melting point used for Density
+    "Density":1.46
 }
 Strontium = {
     "Symbol":"Sr",
     "Atomic Mass":87.62,
     "Atomic Number":38,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "Alkaline Earth Metal",
+    "Melting Point":777,
+    "Boiling Point":1381.85,
+    #liquid at melting point used for Density
+    "Density":2.375
 }
 Yttrium = {
     "Symbol":"Y",
     "Atomic Mass":88.91,
     "Atomic Number":39,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1526,
+    "Boiling Point":3337.85,
+    #liquid at melting point used for Density
+    "Density":4.24
 }
 Zirconium = {
     "Symbol":"Zr",
     "Atomic Mass":91.22,
     "Atomic Number":40,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1854.85,
+    "Boiling Point":4408.85,
+    #liquid at melting point used for Density
+    "Density":5.8
 }
 Niobium = {
     "Symbol":"Nb",
     "Atomic Mass":92.91,
     "Atomic Number":41,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":2477,
+    "Boiling Point":4927,
+    #liquid at melting point used for Density
+    "Density":8.57
 }
 Molybdenum = {
     "Symbol":"Mo",
     "Atomic Mass":95.94,
     "Atomic Number":42,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":2623,
+    "Boiling Point":4638.85,
+    #liquid at melting point used for Density
+    "Density":9.33
 }
 Technetium = {
     "Symbol":"Tc",
     "Atomic Mass":98.00,
     "Atomic Number":43,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":2203.85,
+    "Boiling Point":4264.85
+    #No Density found
 }
 Ruthenium = {
     "Symbol":"Ru",
     "Atomic Mass":101.10,
     "Atomic Number":44,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":2334,
+    "Boiling Point":4150,
+    #liquid at melting point used for Density
+    "Density":10.65
 }
 Rhodium = {
     "Symbol":"Rh",
     "Atomic Mass":102.90,
     "Atomic Number":45,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1962.85,
+    "Boiling Point":3696.85,
+    #liquid at melting point used for Density
+    "Density":10.7
 }
 Palladium = {
     "Symbol":"Pd",
     "Atomic Mass":106.40,
     "Atomic Number":46,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":1554.9,
+    "Boiling Point":2963,
+    #liquid at melting point used for Density
+    "Density":10.38
 }
 Silver = {
     "Symbol":"Ag",
     "Atomic Mass":107.90,
     "Atomic Number":47,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":961.78,
+    "Boiling Point":2162,
+    #liquid at melting point used for Density
+    "Density":9.320
 }
 Cadmium = {
     "Symbol":"Cd",
     "Atomic Mass":112.40,
     "Atomic Number":48,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "TME",
+    "Melting Point":321.07,
+    "Boiling Point":766.85,
+    #liquid at melting point used for Density
+    "Density":7.996
 }
 Indium = {
     "Symbol":"In",
     "Atomic Mass":114.80,
     "Atomic Number":49,
-    "Element Type": None,
-    "Melting Point":None,
-    "Boiling Point":None,
-    "Density":None
+    "Element Type": "POSTAMET",
+    "Melting Point":156.63,
+    "Boiling Point":2072,
+    #liquid at melting point used for Density
+    "Density":7.02
 }
+#continue below using https://artsexperiments.withgoogle.com/periodic-table/?lang=en
 Tin = {
     "Symbol":"Sn",
     "Atomic Mass":118.70,
