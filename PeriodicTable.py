@@ -81,7 +81,7 @@ Fluorine = {
     "Atomic Number":9,
     "Element Type":"Reactive Nonmetal",
     "Melting Point":-219.62,
-    "Boiling Point":-188.11,
+    "Boiling Point":-188.11
     #no density
 }
 Neon = {
@@ -90,7 +90,7 @@ Neon = {
     "Atomic Number":10,
     "Element Type": "Noble Gas",
     "Melting Point":-248.59,
-    "Boiling Point":-246.046,
+    "Boiling Point":-246.046
     #no density
 }
 Sodium = {
@@ -111,61 +111,94 @@ Magnesium = {
     "Boiling Point":1091,
     "Density":1.584
 }
-#start stuff here https://artsexperiments.withgoogle.com/periodic-table/?exp=true&lang=en
 Aluminium = {
     "Symbol":"Al",
     "Atomic Mass":26.982,
     "Atomic Number":13,
-    "Element Type":None
+    "Element Type":"Post-transition Metal",
+    "Melting Point":660.32,
+    "Boiling Point":2470,
+    #liquid at melting point used for density
+    "Density":2.375
 }
 Silicon = {
     "Symbol":"Si",
     "Atomic Mass":28.085,
     "Atomic Number":14,
-    "Element Type":None
+    "Element Type":"Metalloid",
+    "Melting Point":1410,
+    "Boiling Point":2355,
+    #liquid at melting point used for density
+    "Density":2.57
 }
 Phosphorus = {
     "Symbol":"P",
     "Atomic Mass":30.974,
     "Atomic Number":15,
-    "Element Type":None
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":44.1,
+    "Boiling Point":280.5
+    #no Density found
 }
 Sulfur = {
     "Symbol":"S",
     "Atomic Mass":32.06,
     "Atomic Number":16,
-    "Element Type":None
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":112.8,
+    "Boiling Point":444.6,
+    #liquid at melting point used for density
+    "Density":1.819
 }
 Chlorine = {
     "Symbol":"Cl",
     "Atomic Mass":35.45,
     "Atomic Number":17,
-    "Element Type":None
+    "Element Type":"Reactive Nonmetal",
+    "Melting Point":-101.5,
+    "Boiling Point":-34.04
+    #no Density found
 }
 Argon = {
     "Symbol":"Ar",
     "Atomic Mass":39.948,
     "Atomic Number":18,
-    "Element Type":None
+    "Element Type":"Noble Gas",
+    "Melting Point":-189.35,
+    "Boiling Point":-185.85,
+    "Density":1.3954
 }
 Potassium = {
     "Symbol":"K",
     "Atomic Mass":39.098,
     "Atomic Number":19,
-    "Element Type":None
+    "Element Type":"Alkali Metal",
+    "Melting Point":63.5,
+    "Boiling Point":758.85,
+    #liquid at melting point used for density
+    "Density":0.828
 }
 Calcium = {
     "Symbol":"Ca",
     "Atomic Mass":40.078,
     "Atomic Number":20,
-    "Element Type":None
+    "Element Type":"Alkaline Earth Metal",
+    "Melting Point":842,
+    "Boiling Point":1483.85,
+    #liquid at melting point used for Density
+    "Density":1.378
 }
 Scandium = {
     "Symbol":"Sc",
     "Atomic Mass":44.956,
     "Atomic Number":21,
-    "Element Type":None
+    "Element Type":"Transition Metal",
+    "Melting Point":1540.85,
+    "Boiling Point":2835.85,
+    #liquid at melting point used for Density
+    "Density":2.80
 }
+#Continue here below using https://artsexperiments.withgoogle.com/periodic-table/?exp=true&lang=en
 Titanium = {
     "Symbol":"Ti",
     "Atomic Mass":47.867,
