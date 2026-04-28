@@ -1,4 +1,3 @@
-import time
 import PeriodicTable as PT
 class main ():
     def __init__(self) -> None:
@@ -97,7 +96,6 @@ class main ():
                     case _:
                         print(f'\t{prop} | {PT.Chemicals[i][prop]}')
             print("\n")
-            time.sleep(0.1)
 
     def chemical_Add():
         # desired outcome if elements are put in {combined symbols} and {combined mass} EX: hydrogen hydrogen == H2, 2.016g
