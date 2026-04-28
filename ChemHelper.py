@@ -78,9 +78,9 @@ class main ():
                     for prop in PT.Chemicals[Chem].keys():
                         if prop == "Element Type":
                             if (PT.Chemicals[Chem][prop]) == Group:
-                                #Somewhere here doesnt output correctly? should be [Chemical1, Chemical2] instead its ['Chemical1', 'Chemical2']
+                                #adds Chemicals to list if apart of the selected group
                                 ListOfE.append(Chem)
-                #Could also be the case here? should be [Chemical1, Chemical2] instead its ['Chemical1', 'Chemical2']
+                #Joins all of the Chemical names into a desired format without the quotations
                 x=f'[{", ".join(ListOfE)}]'
                 return(print(f"\nThis is the elements in the {Group} group.\n\n{x}\n\n"))
             case _:
