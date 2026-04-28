@@ -71,7 +71,7 @@ class main ():
                                 #Somewhere here doesnt output correctly? should be [Chemical1, Chemical2] instead its ['Chemical1', 'Chemical2']
                                 ListOfE.append(Chem)
                 #Could also be the case here? should be [Chemical1, Chemical2] instead its ['Chemical1', 'Chemical2']
-                return(print(f"This is the elements in the {Group} group.\n{ListOfE}"))
+                return(print(f"\nThis is the elements in the {Group} group.\n\n{ListOfE}\n\n"))
             case _:
                 chemical=main.Chemical_Input_Only()
                 if chemical in PT.Chemicals:
@@ -96,6 +96,7 @@ class main ():
                         print(f'\t{prop} | {PT.Chemicals[i][prop]}g/cm', end="\u00b3")
                     case _:
                         print(f'\t{prop} | {PT.Chemicals[i][prop]}')
+            print("\n")
             time.sleep(0.1)
 
     def chemical_Add():
@@ -172,4 +173,4 @@ class main ():
                 print("\n\nPlease make a choice of 'Y' or 'N' ")
                 main.Replay()
             
-main.chemical_Lookup()
+main.bootup()
