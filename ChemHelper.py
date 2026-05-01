@@ -159,6 +159,11 @@ class main ():
                 print(f"Yikers. The chemical with the name {chemical} isnt in the file currently. Please try again.\n")
             #This will take each element and its total number of atoms and Convert something like H2O to H₂O by using the translation
         for k in SymbolAdd:
+
+            #make the number 1 not appear should be just the symbol
+
+            #also add percent composition of each element if possible 
+
             finalSymbolAdd+=f"{k}{str(SymbolAdd[k]).translate(SUB)}"
             #The reason this works is that the integers will keep being added and once the "Stop or Quit" command is entered
             #The integers are each turned into strings and translated to be added into the desired formula output
@@ -199,3 +204,4 @@ class main ():
                 main.Replay()
             
 main.bootup()
+# make a convertor from mol to specific combination of elements or of one single element
