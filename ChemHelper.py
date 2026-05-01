@@ -112,7 +112,10 @@ class main ():
                         print(f'\t{prop} | {PT.Chemicals[i][prop]}')
             print("\n")
 
+    
     def chemical_Add():
+        #### 
+        #make the calculations use Significant Figures (whether through a separate function or within the already used function) so that these results produce correctly 
         ''' 
         # Found this mapping method for dynamic numbers to avoid needing to import modules
         SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
